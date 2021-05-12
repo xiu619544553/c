@@ -58,10 +58,12 @@ void pointerVarCalculate() {
      */
 }
 
-
-
-
 int main(int argc, const char * argv[]) {
+    
+    /*
+     字符串变量名、函数名称、数组变量名，会被编译为指针；
+     基础数据类型、结构体名称，不会被编译为指针；
+     */
     
     // 指针定义
     pointerDefine();
