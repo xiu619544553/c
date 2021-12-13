@@ -71,5 +71,18 @@ int main(int argc, const char * argv[]) {
     // 指针变量的运算
     pointerVarCalculate();
     
+    
+    printf("===================\n");
+    
+    int a =100;
+    int *p1 = &a;
+    int **p2 = &p1;
+    int ***p3 = &p2;
+    // 想要获取指针指向的数据时，一级指针加一个*，二级指针加两个*，三级指针加三个*，以此类推，请看代码：
+    printf("%d, %d, %d, %d\n", a, *p1, **p2, ***p3);
+    printf("&p2 = %#X, p3 = %#X\n", &p2, p3);
+    printf("&p1 = %#X, p2 = %#X, *p3 = %#X\n", &p1, p2, *p3);
+    printf(" &a = %#X, p1 = %#X, *p2 = %#X, **p3 = %#X\n", &a, p1, *p2, **p3);
+    
     return 0;
 }
