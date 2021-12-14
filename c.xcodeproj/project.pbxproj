@@ -12,6 +12,7 @@
 		CE1E5225264BA3C70044AB24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CE1E5224264BA3C70044AB24 /* main.c */; };
 		CEB99AD9276724F8004D2C66 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CEB99AD8276724F8004D2C66 /* main.c */; };
 		CEB99AE427672EB7004D2C66 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CEB99AE327672EB7004D2C66 /* main.c */; };
+		CEEC7F3A2768270E00BD9CAF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7F392768270E00BD9CAF /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CEEC7F352768270E00BD9CAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +83,8 @@
 		CEB99AD8276724F8004D2C66 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CEB99AE127672EB7004D2C66 /* 库函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "库函数"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB99AE327672EB7004D2C66 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CEEC7F372768270E00BD9CAF /* 二级指针作为形参 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "二级指针作为形参"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEC7F392768270E00BD9CAF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEEC7F342768270E00BD9CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +141,7 @@
 				CE1E5223264BA3C70044AB24 /* struct */,
 				CEB99AD7276724F8004D2C66 /* 二维数组指针 */,
 				CEB99AE227672EB7004D2C66 /* 库函数 */,
+				CEEC7F382768270E00BD9CAF /* 二级指针作为形参 */,
 				CE077805264A58280029763A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +154,7 @@
 				CE1E5222264BA3C70044AB24 /* struct */,
 				CEB99AD6276724F8004D2C66 /* 二维数组指针 */,
 				CEB99AE127672EB7004D2C66 /* 库函数 */,
+				CEEC7F372768270E00BD9CAF /* 二级指针作为形参 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +197,14 @@
 				CEB99AE327672EB7004D2C66 /* main.c */,
 			);
 			path = "库函数";
+			sourceTree = "<group>";
+		};
+		CEEC7F382768270E00BD9CAF /* 二级指针作为形参 */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC7F392768270E00BD9CAF /* main.c */,
+			);
+			path = "二级指针作为形参";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +295,23 @@
 			productReference = CEB99AE127672EB7004D2C66 /* 库函数 */;
 			productType = "com.apple.product-type.tool";
 		};
+		CEEC7F362768270E00BD9CAF /* 二级指针作为形参 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEC7F3D2768270E00BD9CAF /* Build configuration list for PBXNativeTarget "二级指针作为形参" */;
+			buildPhases = (
+				CEEC7F332768270E00BD9CAF /* Sources */,
+				CEEC7F342768270E00BD9CAF /* Frameworks */,
+				CEEC7F352768270E00BD9CAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "二级指针作为形参";
+			productName = "二级指针作为形参";
+			productReference = CEEC7F372768270E00BD9CAF /* 二级指针作为形参 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,6 +335,9 @@
 					CEB99AE027672EB6004D2C66 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					CEEC7F362768270E00BD9CAF = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = CE0777FF264A58280029763A /* Build configuration list for PBXProject "c" */;
@@ -309,6 +358,7 @@
 				CE1E5221264BA3C70044AB24 /* struct */,
 				CEB99AD5276724F8004D2C66 /* 二维数组指针 */,
 				CEB99AE027672EB6004D2C66 /* 库函数 */,
+				CEEC7F362768270E00BD9CAF /* 二级指针作为形参 */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB99AE427672EB7004D2C66 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEC7F332768270E00BD9CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC7F3A2768270E00BD9CAF /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +614,26 @@
 			};
 			name = Release;
 		};
+		CEEC7F3B2768270E00BD9CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEEC7F3C2768270E00BD9CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,6 +687,15 @@
 			buildConfigurations = (
 				CEB99AE627672EB7004D2C66 /* Debug */,
 				CEB99AE727672EB7004D2C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEC7F3D2768270E00BD9CAF /* Build configuration list for PBXNativeTarget "二级指针作为形参" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC7F3B2768270E00BD9CAF /* Debug */,
+				CEEC7F3C2768270E00BD9CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
